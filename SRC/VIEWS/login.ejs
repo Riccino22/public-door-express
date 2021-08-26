@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head.ejs") %>
+    <title>Login with Node</title>
+</head>
+<body>
+    <div id="allLogin">
+    <div class="col -xs-8 col-xs-offset-2">
+        <div id="textLog" align="center"><h1>LOGIN</h1></div>
+
+        <form method="POST">
+            <div>
+                <label for="username"></label>
+                    <input 
+                        type="text" 
+                        name="username"
+                        id="username" 
+                        class="input" 
+                        placeholder="username" 
+                        required
+                    >
+            </div>
+            <br>
+            <div> 
+                <label for="password"></label>
+                <input
+                    type="password"
+                    class="input"
+                    id="password"
+                    name="password"
+                    rows="3"
+                    placeholder="password"
+                    required
+                >
+            </div>
+            <br>
+            <div>
+                <input 
+                    type="submit" 
+                    value="SIGN IN" 
+                    id="sended"
+                    class="text-center"
+                >
+            </div>
+        </form>
+    </div>
+    <% if(!logueo){ %>
+        <h3 align="center" id="error">Error... Try Again</h3>
+    <% } %>
+    </div>
+</body>
+</html>

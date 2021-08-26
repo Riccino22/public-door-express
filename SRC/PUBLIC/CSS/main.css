@@ -1,0 +1,191 @@
+body{
+    background: linear-gradient(
+        to left,
+        #00ffb3,
+        #06c2f1,
+        aqua,
+        #02fa69
+    );   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes bodyMove{
+    from{
+        margin-top: -3rem;
+        color: transparent;
+        background: transparent;
+    }
+
+    to{
+        margin-top: 0;
+        color: default;
+        background: default;
+    }
+}
+
+
+@keyframes btnMove{
+    from{
+        margin-top: -10rem;
+        color: transparent;
+        background: linear-gradient(to left, transparent, transparent);
+    }
+
+    to{
+        margin-top: default;
+        color: default;
+        background: linear-gradient(to left, default, transparent);
+
+    }
+}
+
+
+#textLog{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: #05037cc4;
+    font-size: 15pt;
+}
+
+
+.input{
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22pt;
+    box-shadow: 10px 10px 10px rgba(109, 109, 109, 0.39);
+}
+
+
+#sended{
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18pt;
+    background: #ca05f16e;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+
+.btnIndex{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18pt;
+}
+
+#btnHome:hover{
+    background: #0408f8;
+    color: #fff;
+}
+
+#btnLog:hover{
+    background: #0408f8;
+    color: #fff;
+}
+
+
+#btnHome{
+    background: linear-gradient(to left, red, orange);
+    color: #fcf9d2f6;
+    animation-name: btnMove;
+    margin-left: -100px;
+    margin-top: -80px;
+    animation-duration: 2s;
+    position: absolute;
+}
+
+
+#btnLog{
+    background: linear-gradient(to left, #003cff, #ff00ea);
+    color: #fcf9d2f6;
+    animation-name: btnMove;
+    margin-left: -100px;
+    margin-top: 0px;
+    animation-duration: 2s;
+    position: absolute;
+}
+
+
+.home{
+    animation-name: bodyMove;
+    animation-duration: 2s;
+}
+
+
+#error{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-duration: 2s;
+    animation-name: errorAnim;
+}
+
+@keyframes errorAnim{
+    from{
+        color: transparent;
+    }
+    to{
+        color: red;
+    }
+}
+
+#welcome{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #025856f5;
+    font-size: 30pt;
+}
+
+#github{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #09022ef1;
+    font-size: 15pt;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #01125f;
+    text-decoration: underline;
+}
+
+
+
+
+@media (min-width: 1350px){
+  
+    #sended{
+        width: 350px;
+        height: 70px;
+        font-size: 18pt;
+    }
+
+    .input{
+        width: 450px;
+        height: 70px;
+        font-size: 27pt;
+    }
+
+    #textLog{
+        font-size: 20pt;
+    }
+
+}

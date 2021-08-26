@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head.ejs") %>
+    <title>Login With NodeJS</title>
+</head>
+<body>
+    <% if(!passLogin){ %>
+        <a href="/login"><button class="btnIndex" id="btnLog">Go to Login</button></a>
+        <br>
+    <% } %>
+    <a href="/home"><button class="btnIndex" id="btnHome">Go to Home</button></a>        
+</body>
+</html>
